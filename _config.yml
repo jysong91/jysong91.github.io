@@ -19,9 +19,9 @@ locale                   : "en-US"
 title                    : "Jay's"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "jysong"
-description              : "An amazing website."
-url                      : "https://jysong.github.io"
+name                     : "Jay"
+description              : "개발 정보 공유소"
+url                      : "https://jysong91.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jay"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "함께 배우며 정보를 공유하고픈 **개발자**입니다."
   location         : "Somewhere"
   email            :
   links:
@@ -116,7 +116,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/songyangb"
 
 # Site Footer
 footer:
@@ -138,7 +138,8 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/songyangb"
+
 
 
 # Reading Files
