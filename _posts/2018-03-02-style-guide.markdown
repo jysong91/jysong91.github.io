@@ -65,17 +65,28 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 
 #### Syntax Highlighter
 
-{% highlight js %}
-  $('.top').click(function () {
-    $('html, body').stop().animate({ scrollTop: 0 }, 'slow', 'swing');
-  });
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(window).height()) {
-      $('.top').addClass("top-active");
-    } else {
-      $('.top').removeClass("top-active");
-    };
-  });
+{% highlight swift %}
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Set up table view
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
+        // Set up button
+        button.setTitle("Collapse", for: .normal)
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        view.addSubview(button)
+        button.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(16)
+            make.centerX.equalToSuperview()
+        }
+    }
 {% endhighlight %}
 
 ***
